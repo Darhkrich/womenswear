@@ -19,7 +19,7 @@ export default function Navbar() {
             href="/"
             className="text-2xl font-serif font-bold tracking-tighter text-gray-900"
           >
-            LUMIÈRE
+            SHOPNAME
           </Link>
 
           {/* Desktop Links */}
