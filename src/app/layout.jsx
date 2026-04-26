@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata = {
-  title: 'LUMIÈRE | Modern Women\'s Boutique',
+  title: 'Ladies Wears Website | Modern Women\'s Boutique',
   description: 'Curated fashion for the modern woman.',
 };
 
