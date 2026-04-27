@@ -30,7 +30,7 @@ function OrderSuccessContent() {
           </div>
           <div className="flex justify-between">
             <span className="text-gray-500">Total Paid:</span>
-            <span className="font-medium text-gray-900">${total}</span>
+            <span className="font-medium text-gray-900">GH₵{total}</span>
           </div>
           <div className="flex justify-between">
             <span className="text-gray-500">Email Confirmation:</span>

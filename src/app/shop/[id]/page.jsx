@@ -216,7 +216,7 @@ export default function ProductDetail() {
             {/* Perks */}
             <div className="mt-8 space-y-3 text-sm text-gray-500">
               <div className="flex items-center gap-2">
-                <Check size={16} className="text-green-600" /> Free shipping on orders over $150
+                <Check size={16} className="text-green-600" /> Free shipping on orders over GH₵150
               </div>
               <div className="flex items-center gap-2">
                 <Check size={16} className="text-green-600" /> 30-day return policy
@@ -252,7 +252,7 @@ export default function ProductDetail() {
                   <p>{product.description} Expertly crafted and ethically sourced. Pair it with our curated accessories for a complete look.</p>
                 ) : (
                   <div className="space-y-2">
-                    <p>Free standard shipping on orders over $150.</p>
+                    <p>Free standard shipping on orders over GH₵150.</p>
                     <p>Express delivery available at checkout.</p>
                     <p>Returns accepted within 30 days of delivery. Items must be unworn with tags attached.</p>
                   </div>
@@ -284,7 +284,7 @@ export default function ProductDetail() {
                 <h3 className="text-sm font-medium text-gray-900 group-hover:text-rose-600 transition-colors">
                   {related.name}
                 </h3>
-                <p className="text-sm text-gray-500">${related.price.toFixed(2)}</p>
+                <p className="text-sm text-gray-500">GH₵{related.price.toFixed(2)}</p>
               </Link>
             ))}
           </div>

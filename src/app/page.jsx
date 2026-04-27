@@ -118,7 +118,7 @@ export default function Home() {
               <h3 className="mt-4 text-base font-medium text-gray-900 group-hover:text-rose-600 transition-colors">
                 {product.name}
               </h3>
-              <p className="mt-1 text-sm text-gray-500">${product.price.toFixed(2)}</p>
+              <p className="mt-1 text-sm text-gray-500">GH₵{product.price.toFixed(2)}</p>
             </Link>
           ))}
         </div>
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <h3 className="text-lg font-medium text-gray-900 mb-2">Free Shipping Over $150</h3>
             <p className="text-gray-500">
-              Enjoy complimentary shipping on all orders above $150. Easy 30‑day returns.
+              Enjoy complimentary shipping on all orders above GH₵150. Easy 30‑day returns.
             </p>
           </div>
         </div>

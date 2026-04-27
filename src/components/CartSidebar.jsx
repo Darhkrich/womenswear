@@ -82,7 +82,7 @@ export default function CartSidebar() {
                       <div>
                         <div className="flex justify-between text-base font-medium text-gray-900">
                           <h3 className="pr-2">{item.name}</h3>
-                          <p>${(item.price * item.quantity).toFixed(2)}</p>
+                          <p>GH₵{(item.price * item.quantity).toFixed(2)}</p>
                         </div>
                         <p className="mt-1 text-sm text-gray-500">{item.category}</p>
                       </div>
@@ -136,7 +136,7 @@ export default function CartSidebar() {
                   <p className="text-gray-600">
                     Spend{' '}
                     <span className="font-semibold text-black">
-                      ${(shippingThreshold - cartTotal).toFixed(2)}
+                      GH₵{(shippingThreshold - cartTotal).toFixed(2)}
                     </span>{' '}
                     more for free shipping.
                   </p>
@@ -155,7 +155,7 @@ export default function CartSidebar() {
 
             <div className="flex justify-between text-base font-medium text-gray-900">
               <p>Subtotal</p>
-              <p>${cartTotal.toFixed(2)}</p>
+              <p>GH₵{cartTotal.toFixed(2)}</p>
             </div>
 
             <Link

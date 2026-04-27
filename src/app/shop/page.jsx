@@ -100,7 +100,7 @@ function ShopContent() {
                 <h3 className="text-sm font-medium text-gray-900 group-hover:text-rose-600 transition-colors">
                   {product.name}
                 </h3>
-                <p className="text-sm font-medium text-gray-900">${product.price.toFixed(2)}</p>
+                <p className="text-sm font-medium text-gray-900">GH₵{product.price.toFixed(2)}</p>
               </div>
               <p className="text-xs text-gray-500 mt-1">{product.category}</p>
             </Link>

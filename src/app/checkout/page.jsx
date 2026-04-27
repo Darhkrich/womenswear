@@ -12,7 +12,7 @@ export default function Checkout() {
   const [momoNumber, setMomoNumber] = useState('');
   const [momoProvider, setMomoProvider] = useState('mtn');
 
-  const shippingCost = cartTotal >= 150 ? 0 : 15; // free over $150
+  const shippingCost = cartTotal >= 500 ? 0 : 15; // free over $150
   const tax = cartTotal * 0.08;
   const finalTotal = cartTotal + shippingCost + tax;
 
@@ -199,7 +199,7 @@ export default function Checkout() {
             >
               {isProcessing
                 ? 'Processing...'
-                : `Pay $${finalTotal.toFixed(2)}`}
+                : `Pay GH₵${finalTotal.toFixed(2)}`}
             </button>
           </form>
         </section>
@@ -217,7 +217,7 @@ export default function Checkout() {
                   <div>
                     <div className="flex justify-between text-base font-medium text-gray-900">
                       <h3>{item.name}</h3>
-                      <p>${item.price}</p>
+                      <p>GH₵{item.price}</p>
                     </div>
                     <p className="mt-1 text-sm text-gray-500">{item.category}</p>
                     {item.selectedSize && <p className="mt-1 text-sm text-gray-500">Size: {item.selectedSize}</p>}
@@ -233,19 +233,19 @@ export default function Checkout() {
           <div className="border-t border-gray-200 pt-6 mt-6 space-y-4">
             <div className="flex justify-between text-sm text-gray-600">
               <p>Subtotal</p>
-              <p>${cartTotal.toFixed(2)}</p>
+              <p>GH₵{cartTotal.toFixed(2)}</p>
             </div>
             <div className="flex justify-between text-sm text-gray-600">
               <p>Shipping</p>
-              <p>{shippingCost === 0 ? 'Free' : `$${shippingCost.toFixed(2)}`}</p>
+              <p>{shippingCost === 0 ? 'Free' : `GH₵${shippingCost.toFixed(2)}`}</p>
             </div>
             <div className="flex justify-between text-sm text-gray-600">
               <p>Tax (8%)</p>
-              <p>${tax.toFixed(2)}</p>
+              <p>GH₵{tax.toFixed(2)}</p>
             </div>
             <div className="flex justify-between text-base font-medium text-gray-900 border-t border-gray-200 pt-4">
               <p>Total</p>
-              <p>${finalTotal.toFixed(2)}</p>
+              <p>GH₵{finalTotal.toFixed(2)}</p>
             </div>
           </div>
         </section>
